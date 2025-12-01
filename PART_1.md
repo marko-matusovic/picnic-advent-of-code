@@ -8,7 +8,8 @@ The totes arrive in a single, continuous stream. The arm needs to grab consecuti
 **Stacks**. The arm is energy-hungry; it prefers to grab a full stack of 4 totes at once. Picking up totes one by one
 causes the servo-motors to overheat.
 
-**The Input**
+### The Input
+
 [Your puzzle input](./INPUT) is a single line representing the stream of incoming totes. Each tote is separated by a
 single space. A tote is defined by a **Type** and a **Weight**.
 
@@ -21,7 +22,8 @@ single space. A tote is defined by a **Type** and a **Weight**.
 A10 C08 F05 A20 A20 C10
 ```
 
-**The Stacking Rules**
+### The Stacking Rules
+
 You must divide the entire stream into contiguous segments to form valid Stacks.
 
 1. **Capacity:** A stack can contain **1 to 4** totes.
@@ -32,7 +34,8 @@ You must divide the entire stream into contiguous segments to form valid Stacks.
 3. **Gravity Stability:** You cannot place a heavier tote on top of a lighter tote.
     * $Weight_{top} \le Weight_{below}$
 
-**The Handling Cost**
+### The Handling Cost
+
 To save energy, you want to maximise the size of your stacks. The cost is determined by the size of the stack you
 create:
 
@@ -41,11 +44,13 @@ create:
 * **Stack of 3:** Cost **10**
 * **Stack of 4:** Cost **0** (Perfect efficiency)
 
-**Your Mission**
-Process the stream from start to finish. Determine the optimal places to "cut" the stream into stacks such that the *
-*Total Handling Cost** is minimised.
+### Your Mission
 
-**Example:**
+> Process the stream from start to finish. Determine the optimal places to "cut" the stream into stacks such that the
+> **Total Handling Cost** is minimised.
+
+### Example:
+
 Stream: `A20 A20 A20 A20 A20`
 
 * *Option 1:* Five stacks of 1. Cost: $5 \times 50 = 250$.
@@ -58,6 +63,8 @@ In this example, the minimum cost is **35**.
 
 -----
 
-Your answer: _______________
+~~Your answer:~~ _______________
+
+For answer reach out to `@marko` on [Slack](https://picnic.enterprise.slack.com/team/U07L5RH4VH6).
 
 Did you get it right? Proceed to [part 2](./PART_2.md)

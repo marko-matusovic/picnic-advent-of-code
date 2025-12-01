@@ -9,7 +9,7 @@ A **Frame** contains exactly **3 Slots** (Left, Middle, Right) sitting side-by-s
 You must process the tote stream again. This time, instead of just cutting the stream, you are deciding which **Slot**
 in the current Frame gets the next tote.
 
-**The Mechanics**
+### The Mechanics
 
 1. **State:** You maintain 3 active stacks simultaneously (Slot 1, Slot 2, Slot 3). Initially, all are empty.
 2. **Placement:** Take the *next* tote from the stream. Place it on top of the stack in Slot 1, 2, or 3.
@@ -23,7 +23,8 @@ in the current Frame gets the next tote.
     * *Forced Shipping:* If the next tote fits in **none** of the current slots (due to rules or capacity), you **MUST**
       ship the current Frame immediately and place the tote in the new, empty Frame.
 
-**The Cost Function**
+### The Cost Function
+
 We need to balance **Logistics** (number of frames used) against **Stability** (how balanced the frame is).
 
 Every time a Frame is shipped, calculate the cost:
@@ -33,11 +34,13 @@ Every time a Frame is shipped, calculate the cost:
    $$Penalty = (Weight_{HeaviestSlot} - Weight_{LightestSlot})^2$$
    *(Note: Empty slots count as Weight 0).*
 
-**The Objective**
-Process the entire stream. You must decide where to place every tote and when to ship the Frames to achieve the lowest
-possible score.
+### The Objective
 
-**Example Walkthrough**
+> Process the entire stream. You must decide where to place every tote and when to ship the Frames to achieve the lowest
+> possible score.
+
+### Example Walkthrough
+
 Stream: `A20 C10 C10`
 
 * **Step 1:** Tote `A20`. Frame is `[0, 0, 0]`.
@@ -59,3 +62,5 @@ Stream: `A20 C10 C10`
 **What is the Minimum Total Cost (Logistics + Imbalance) to clear the entire stream?**
 
 Your answer: _______________
+
+For answer reach out to `@marko` on [Slack](https://picnic.enterprise.slack.com/team/U07L5RH4VH6).
