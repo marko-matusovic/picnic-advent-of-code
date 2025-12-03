@@ -2,11 +2,12 @@
 
 # Part 1: The Stack Segmentation
 
-Your first task is to fix the robotic arm that lifts totes from the main conveyor belt.
+Your first task is to fix the stacking protocol by instructing the robotic arm to efficiently stack totes from the main
+conveyor belt into a single vertical stack.
 
-The totes arrive in a single, continuous stream. The arm needs to grab consecutive totes and group them into vertical
-**Stacks**. The arm is energy-hungry; it prefers to grab a full stack of 4 totes at once. Picking up totes one by one
-causes the servo-motors to overheat.
+The totes arrive in a single, continuous stream. The arm needs to group consecutive totes into vertical **Stacks**. To
+conserve energy, the arm should pick up as many totes at once as possible, ideally 4 totes per stack. Picking up fewer
+totes causes higher energy consumption and risks overheating the servo-motors.
 
 ### The Input
 
@@ -46,8 +47,8 @@ create:
 
 ### Your Mission
 
-> Process the stream from start to finish. Determine the optimal places to "cut" the stream into stacks such that the
-> **Total Handling Cost** is minimised.
+Process the stream from start to finish. Determine the optimal places to "cut" the stream into stacks such that the
+**Total Handling Cost** is minimised.
 
 ### Example:
 

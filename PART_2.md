@@ -36,8 +36,8 @@ Every time a Frame is shipped, calculate the cost:
 
 ### The Objective
 
-> Process the entire stream. You must decide where to place every tote and when to ship the Frames to achieve the lowest
-> possible score.
+Process the entire stream. You must decide where to place every tote and when to ship the Frames to achieve the lowest
+possible score.
 
 ### Example Walkthrough
 
