@@ -20,7 +20,7 @@ single space. A tote is defined by a **Type** and a **Weight**.
 **Example Input:**
 
 ```text
-A10 C08 F05 A20 A20 C10
+F45 C20 F60 C45 A20 A15 A07
 ```
 
 ### The Stacking Rules
@@ -52,20 +52,24 @@ Process the stream from start to finish. Determine the optimal places to "cut" t
 
 ### Example:
 
-Stream: `A20 A20 A20 A20 A20`
+Stream: `F45 C20 F60 C45 A20 A15 A07`
 
-* *Option 1:* Five stacks of 1. Cost: $5 \times 50 = 250$.
-* *Option 2:* One stack of 4, one stack of 1. Cost: $0 + 50 = 50$.
-* *Option 3:* One stack of 3, one stack of 2. Cost: $10 + 25 = 35$.
+* *Option 1:*
+    * Seven stacks of 1 `[F45] [C20] [F60] [C45] [A20] [A15] [A07]`.
+    * Cost: $7 \times 50 = 350$.
+* *Option 2:*
+    * One stack of 2 `[F45 C20]`, one stack of 4 `[F60 C45 A20 A15]`, one stack of 1 `[A07]`.
+    * Cost: $25 + 0 + 50 = 75$.
+* *Option 3:*
+    * One stack of 2 `[F45 C20]`, one stack of 3 `[F60 C45 A20]`, one stack of 2 `[A15 A07]`.
+    * Cost: $25 + 10 + 25 = 60$.
 
-In this example, the minimum cost is **35**.
+In this example, the minimum cost is **60**.
 
 **What is the minimum Handling Cost for your puzzle input?**
 
 -----
 
-~~Your answer:~~ _______________
-
-For answer reach out to `@marko` on [Slack](https://picnic.enterprise.slack.com/team/U07L5RH4VH6).
+Your answer: _______________
 
 Did you get it right? Proceed to [part 2](./PART_2.md)

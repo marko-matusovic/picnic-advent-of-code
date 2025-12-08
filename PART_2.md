@@ -62,5 +62,3 @@ Stream: `A20 C10 C10`
 **What is the Minimum Total Cost (Logistics + Imbalance) to clear the entire stream?**
 
 Your answer: _______________
-
-For answer reach out to `@marko` on [Slack](https://picnic.enterprise.slack.com/team/U07L5RH4VH6).
