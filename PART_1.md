@@ -70,6 +70,6 @@ In this example, the minimum cost is **60**.
 
 -----
 
-Your answer: _______________
+Your answer: _______1710_______
 
 Did you get it right? Proceed to [part 2](./PART_2.md)
